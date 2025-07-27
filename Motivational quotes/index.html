@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Motivational Quotes App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="toggle-switch">
+      <label>
+        🌙 Dark Mode
+        <input type="checkbox" id="darkModeToggle" />
+      </label>
+    </div>
+
+    <h1>🌟 Motivational Quotes</h1>
+
+    <div class="random-quote" id="randomQuote">Your quote will appear here...</div>
+
+    <textarea id="quoteInput" rows="3" placeholder="Write your motivational quote here..."></textarea>
+    <button onclick="addQuote()">Add Quote</button>
+
+    <input type="text" id="searchInput" placeholder="🔍 Search quotes..." oninput="filterQuotes()" />
+
+    <div class="grid" id="quotesGrid"></div>
+  </div>
+   <script src="index.js"></script>
+  
+</body>
+</html>
